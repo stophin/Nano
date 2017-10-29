@@ -1,0 +1,19 @@
+folder/upload/stophin/textures/role/Test.bmp	10	300	2
+folder/upload/stophin/textures/role/39-1.png	11	300	2
+folder/upload/stophin/textures/role/LeftBlock.bmp	12
+folder/upload/stophin/textures/role/LeftBlock1.bmp	13
+folder/upload/stophin/textures/role/Person4.png	14	1
+folder/upload/stophin/textures/role/Player1-1.PNG	31	1
+folder/upload/stophin/textures/role/Player1-2.PNG	32	1
+folder/upload/stophin/textures/role/Player1-3.PNG	33	1
+folder/upload/stophin/textures/spirit/cursor.png	22	1
+folder/upload/stophin/textures/tree/tree1.png	301	201	2
+folder/upload/stophin/textures/tree/tree2.png	302	202	2
+folder/upload/stophin/textures/tree/tree3.png	303	203	2
+folder/upload/stophin/textures/tree/tree1.png	304	204	2
+folder/upload/stophin/textures/pitch/001.png	101	100	2
+folder/upload/stophin/textures/pitch/002.png	102	100	2
+folder/upload/stophin/textures/pitch/003.png	103	100	2
+folder/upload/stophin/textures/pitch/004.png	104	100	2
+folder/upload/stophin/textures/pitch/006.png	105	100	2
+folder/upload/stophin/textures/tree/dead.png	305	200	2
