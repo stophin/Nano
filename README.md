@@ -23,3 +23,5 @@ Client.connect("127.0.0.1",9005);
  set resource folde as /, and server as 127.0.0.1 and port at 8080  
 http://127.0.0.1:8080/index.php  
  the script server and port(in index.php) could be different from your resource server.
+ 
+5. Resource server and script server can also be ran in Liunx.
