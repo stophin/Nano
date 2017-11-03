@@ -244,7 +244,7 @@ function Initialize(worldID, roleID)
 	
 	resize();
 	preview.resize(300, 300);
-	preview.display.X = 100;
+	preview.display.X = 500;
 	preview.display.Y = 100;
 	if (world.quadTree)
 	{
@@ -274,6 +274,8 @@ function Initialize(worldID, roleID)
 	
 	loadScene(world);
 	loadScene(preview, "scene1.txt");
+
+	preview.offset(0, 0);
 	
 	var scrollLink = new ScrollLink(resm.resource, 0, 100, world.geometry.Height, 100);
 	gui.addComponent(scrollLink);
