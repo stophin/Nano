@@ -6,6 +6,10 @@ Project Nano
 Please use Tomcat or whatever else that support php to serve as file server.  
 Use nodejs as game serve.  
 If you don't want to install nodejs, then only php server will be OK.  
+
+#NOTE:
+use of nodejs version 0.10.29 (current newest) is recommended,
+and no need to update server/node_modules if not necessary.
   
 HOWTO:  
 1. Change server-php.bat, replace path with your own JAVA_HOME, PHP_HOME, etc.  
