@@ -239,7 +239,7 @@ function Roles()
 	}
 	Roles.prototype.nextAnimation = function ()
 	{
-		this.animations.nextAnimation(this);
+		this.animations.nextAnimation(this, this.moving);
 		// Control Force
 		this.controlForce();
 	}

@@ -34,7 +34,7 @@ function Animations()
 			temp = temp.next;
 		} while (temp && temp != this.objects.link);
 	}
-	Animations.prototype.nextSequence = function (lParam)
+	Animations.prototype.nextSequence = function (lParam, moving)
 	{
 		if (this.objects.link == null)
 		{
@@ -58,7 +58,7 @@ function Animations()
 				{
 					// Do not do trigger when moving if mode is Step
 					// even if sequence is done
-					if (lParam && lParam.moving)
+					if (lParam && moving)
 					{
 						temp.objectCount = -1;
 					}
