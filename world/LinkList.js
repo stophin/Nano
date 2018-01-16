@@ -42,7 +42,7 @@ function LinkList()
 			}
 			else // before != null && after != null
 			{
-				if (before.prev != after || adter.next != before)
+				if (before.prev != after || after.next != before)
 				{
 					return;
 				}
