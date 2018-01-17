@@ -49,7 +49,7 @@ function Paths(x, y)
 		this.collisions.clearLink();
 		role.moveFlat(x, y);
 		var cursor = role.world.cursor;
-		var o_x, o_y;
+		var o_x = 0, o_y = 0;
 		if (cursor)
 		{
 			o_x = cursor.flatting.X;
