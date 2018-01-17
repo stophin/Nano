@@ -392,7 +392,7 @@ function getDirection(base, direction)
 	}
 	else if (direction == "still")
 	{
-		index = Animation_Direction.Still;
+		index = Animation_Direction.Undefined;
 	}
 	else
 	{
