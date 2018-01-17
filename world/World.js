@@ -44,9 +44,9 @@ function World(uniqueID)
 		this.geometry.Height = height;
 
 		this.leftTop = projectShow(this.geometry.X, this.geometry.Y);
-		this.vLeftBottom = projectShow(this.geometry.X, this.geometry.Y + this.geometry.Height) - this.leftTop;
-		this.vRightTop = projectShow(this.geometry.X + this.geometry.Width, this.geometry.Y) - this.leftTop;
-		this.vRightBottom = projectShow(this.geometry.X + this.geometry.Width, this.geometry.Y + this.geometry.Height) - this.leftTop;
+		this.vLeftBottom = projectShow(this.geometry.X, this.geometry.Y + this.geometry.Height).minus(this.leftTop);
+		this.vRightTop = projectShow(this.geometry.X + this.geometry.Width, this.geometry.Y).minus(this.leftTop);
+		this.vRightBottom = projectShow(this.geometry.X + this.geometry.Width, this.geometry.Y + this.geometry.Height).minus(this.leftTop);
 	}
 	World.prototype.offset = function (offsetX, offsetY)
 	{

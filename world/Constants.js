@@ -108,7 +108,7 @@ var Relation =
 {
 	A:0,
 	B:1,
-	C:1,
+	C:2,
 	D:3,
 	D_L:4,
 	D_T:5,
