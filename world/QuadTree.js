@@ -25,7 +25,8 @@ function QuadTree(level, bounds, parent, position)
 	this.level = level;
 	this.position = position || 0;
 	this.bounds = bounds;
-	this.objects = new MultiLinkList(Role_Link.QuadTree);
+	//this.objects = new MultiLinkList(Role_Link.QuadTree);
+	this.objects = new MultiLinkList(level + Role_Link.End - 1);
 	
 	this.uniqueID = 0;
 	this.parent = parent || null;
@@ -103,24 +104,21 @@ function QuadTree(level, bounds, parent, position)
 		if (this.objects.linkcount > this.maxObjects && this.level < this.maxLevels)
 		{
 			this.split();
-			var i = 0;
-			for (i = 0; i < this.objects.linkcount; i++)
-			{
-				_role = this.objects.topnLink(i);
-				if (!_role)
-				{
-					break;
-				}
-				index = this.getIndex(_role.flatting);
-				if (index != -1)
-				{
-					this.objects.removeLink(_role);
-					if (i > 0)
-					{
-						i --;
+
+			var _obj = this.objects.link;
+			var _next;
+			if (_obj) {
+				do {
+					_next = this.objects.next(_obj);
+
+					index = this.getIndex(_obj.flatting);
+					if (index != -1) {
+						this.objects.removeLink(_obj);
+						this.children[index].insert(_obj);
 					}
-					this.children[index].insert(_role);
-				}
+
+					_obj = _next;
+				} while(_obj && _obj != this.objects.link);
 			}
 		}
 	}

@@ -76,7 +76,8 @@ var Role_Link =
 	QuadTree:8,
 	Temp1:9,
 	Temp2:10,
-	Max:11
+	End: 11,
+	Max: 20
 };
 
 var Role_Type =
