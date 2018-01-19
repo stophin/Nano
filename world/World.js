@@ -270,7 +270,8 @@ function World(uniqueID)
 			temp = this.players.link;
 			do
 			{
-				temp.drawAnimation(graphics);
+				//temp.drawAnimation(graphics);
+				temp.nextAnimation();
 				i++;
 				temp = this.players.next(temp);
 			}while (temp && temp != this.players.link);
