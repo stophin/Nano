@@ -555,7 +555,7 @@ function createMap(mapString, world, resourceManager)
 	}
 }
 
-function loadScene(world, name)
+function loadScene(world, scale, name)
 {
 	if (!world)
 	{
@@ -577,7 +577,7 @@ function loadScene(world, name)
 		dataType : 'text',
 		success : function(data)
 		{
-			createScene(data, world);
+			createScene(data, world, scale);
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown) 
 		{
@@ -591,7 +591,7 @@ function loadScene(world, name)
 }
 
 var g_roles = new Array();
-function createScene(sceneString, world)
+function createScene(sceneString, world, _scale)
 {
 	if (!world)
 	{
@@ -627,6 +627,7 @@ function createScene(sceneString, world)
 			{
 				scale = 1;
 			}
+			scale *= _scale;
 			data = g_roles[indexString[0] + ".txt"];
 			if (!data)
 			{
