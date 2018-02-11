@@ -4,8 +4,9 @@ Project Nano
 -- How to use  
   
 Please use Tomcat or whatever else that support php to serve as file server.  
-Use nodejs as game serve.  
-If you don't want to install nodejs, then only php server will be OK.  
+Use nodejs as game server.  
+If you don't want to install nodejs, then only php server will be OK,  
+but the player's status cannot be broadcasted.  
 
 #NOTE:
 use of nodejs version 0.10.29 (current newest) is recommended,
@@ -26,6 +27,6 @@ Client.connect("127.0.0.1",9005);
 4. That's all done. Use the following to browse the Game if you  
  set resource folde as /, and server as 127.0.0.1 and port at 8080  
 http://127.0.0.1:8080/index.php  
- the script server and port(in index.php) could be different from your resource server.
+ the script server and port(in index.php) could be different from your resource server.  
  
 5. Resource server and script server can also be ran in Liunx.
