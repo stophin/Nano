@@ -54,13 +54,13 @@ var Animation_Direction =
 {
 	Undefined:0,
 	Left:1,
-	Left_Up:3,
+	Left_Up:2,
 	Up:3,
-	Right_Up:3,
+	Right_Up:4,
 	Right:5,
-	Right_Down:7,
+	Right_Down:6,
 	Down:7,
-	Left_Down:7
+	Left_Down:8
 };
 
 var Role_Link =
